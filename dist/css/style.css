@@ -382,6 +382,10 @@ body {
     padding: 0px 10px;
   }
 
+  .header {
+    margin: 20px 0px 0px 0px;
+  }
+
   .modal {
     width: 100%;
   }
