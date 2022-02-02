@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Todo List</title>
+    <link rel="stylesheet" href="css/style.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;800&display=swap" rel="stylesheet">
+</head>
+
+<body>
+    <header class="header">
+        <div class="header__container container">
+            <div class="header__wrapper">
+                <h1>Todo List</h1>
+                <div class="header__menu"></div>
+                <div class="modal">
+                    <div class="modal__container container">
+                        <div class="modal__close">X</div>
+                        <div class="modal__task">
+                            <form class="modal__form">
+                                <input type="text" class="modal__input" placeholder="new task name"
+                                    aria-label="new task name" />
+                                <button type="submit" class="modal__button btn">Add task</button>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </header>
+
+    <div class="page__menu menu">
+        <div class="menu__container container">
+            <div class="menu__items">
+                <div class="menu__item item-all">
+                    <img src="img/all.png" alt="all">
+                    <h4 class="menu__text">All tasks</h4>
+                </div>
+                <div class="menu__item item-active">
+                    <img src="img/active.png" alt="active">
+                    <h4 class="menu__text">Active</h4>
+                </div>
+                <div class="menu__item item-complete">
+                    <img src="img/complete2.png" alt="complete">
+                    <h4 class="menu__text">Completed</h4>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="page__todolist todolist">
+        <div class="todolist__container container">
+            <ul class="todolist__tasks">
+                <!-- <li class="todolist__task task">
+                    <div class="task__check">
+                    <input type="checkbox" class="task__checkbox" />
+                    <p class="task__text">new task</p></div>
+                    <span class="task__delete">&cross;</span>
+            </li> -->
+            </ul>
+        </div>
+    </div>
+    <footer class="footer">
+        <div class="footer__container container">
+            <div class="footer__wrapper">
+                <button class="footer__cleartasks btn">Clear completed tasks</button>
+                <button class="footer__clearlist btn">Clear the list</button>
+            </div>
+        </div>
+    </footer>
+
+    <script src="js/script.min.js"></script>
+</body>
+
+</html>
