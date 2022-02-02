@@ -31,7 +31,7 @@ taskListContainer.addEventListener('click', e => {
 modalForm.addEventListener('submit', e => {
     e.preventDefault()
     const taskName = taskInput.value
-    if (taskName == null || taskName === '') return
+    if (taskName == null || taskName.trim().length === 0 ) return
     const task = createTask(taskName)
     taskInput.value = ''
     tasksList.push(task)

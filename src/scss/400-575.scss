@@ -1,3 +1,25 @@
 @media (min-width: 300px) and (max-width: 575px) {
-  
+    .container {
+        padding: 0px 10px;
+    }
+    
+    .header {
+        margin: 20px 0px 0px 0px;
+    }
+    
+    .modal {
+      width: 100%;
+
+      &__form {
+          display: flex;
+          flex-direction: column;
+
+      }
+
+      &__input {
+          margin: -10px 0px 10px 0px;
+          max-width: 300px;
+      }
+
+  }
 }
